@@ -1,0 +1,238 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #020202;
+}
+
+/* BODY */
+
+body {
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+}
+.caja-1 {
+    background: #ffffff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-2 {
+    display: flex;
+    background: #ffff;
+    width: 80%;
+    height: 80px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.izquierda{
+    display: flex;
+    justify-content: flex-start;
+    width: 400PX;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 30px;
+}
+
+.izquierda ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-self: flex-start;
+    align-items: center;
+    text-decoration: none;
+   
+}
+
+li  {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 12px;
+    list-style: none;
+}
+
+.derecha {
+    display: flex;
+    font-size: 14px;
+    justify-content: right; 
+    align-items: center;
+    width: 400PX;
+    margin-right: 120PX;
+    gap: 20px;
+
+}
+
+.icono-pin {
+    height: 1rem;
+    
+}
+/* Estilos botones */
+.login {
+    background-color: #fff; 
+    color: #000; 
+    border: 2px solid #000; 
+    border-radius: 20px; 
+    padding: 4px 14px;
+    font-family: Arial, sans-serif; 
+    cursor: pointer; 
+}
+
+
+.join {
+    background-color: #000; 
+    color: #fff; 
+    border: none; 
+    border-radius: 20px; 
+    padding: 4px 14px; 
+    font-family: Arial, sans-serif; 
+    cursor: pointer; 
+}
+
+
+.join:hover {
+    background-color: #555;
+}
+
+/* Sección Principal */
+.main-banner {
+    background-color: #1e3932;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 90px;
+}
+
+.banner-content {
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;;
+}
+
+.banner-content .image img {
+    width: 560px;
+    height: auto;
+}
+
+.text {
+    display: flex;
+    text-align: center;
+    height: 100%;
+    word-break: break-all;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-end;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-right: 100px;
+}
+
+
+.banner-content .text h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.banner-content .text p {
+    font-size: 1rem;
+}
+
+/* Sección Promocional */
+.promo-section{
+    background: #ffffff;
+    width: 100%;
+    margin-top: 30px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja-promocion {
+    background-color: #1024d3; 
+    color: #fff;
+    display: flex; 
+    align-items: center; 
+    width: 88%;
+    margin-right: 90px;
+  }
+  
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    word-break: break-all;
+    height: 80%;
+    text-align: center;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  
+  .cafes {
+    text-align: center;
+  }
+  
+  .cafes img {
+    width: 100%; 
+    max-width: 650px; 
+  }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-content .image img {
+        margin: 0 auto 20px;
+    }
+
+    .promo-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promo-images img {
+        width: 140px;
+    }
+}
+
+
